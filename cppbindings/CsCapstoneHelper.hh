@@ -2,6 +2,12 @@
 
 #include <capstone.h>
 #include <memory>
+// Required for CC compiling 
+#define __forceinline __attribute__((always_inline))                            
+#define __in                                                                    
+#define __inout                                                                 
+#define __inner_checkReturn                                                     
+#define __checkReturn __inner_checkReturn
 
 struct CS_HANDLE :
 	public std::shared_ptr<csh>
