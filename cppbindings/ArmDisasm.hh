@@ -21,7 +21,7 @@ class CArmDisasm :
 	public CCsDisasm<CArmInsClass>
 {
 public:
-	CArmDisasm86(
+	CArmDisasm(
 		__in unsigned int mode = cs_mode::CS_MODE_THUMB + cs_mode::CS_MODE_LITTLE_ENDIAN
 		) : CCsDisasm(cs_arch::CS_ARCH_ARM, mode)
 	{
